@@ -1,0 +1,103 @@
+body {
+    background-color: #0C131F;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 140px;
+    line-height: 0.1;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+}
+@media all and (max-width: 550px) {
+    .info
+    {
+        visibility: hidden;
+        margin: auto;
+    }
+    .ent, .social, .misc, .media, .email {
+        flex-direction: column;
+        width: auto;
+    }
+}
+#clock {
+    font-size: 45px;
+    color: #2195fa
+}
+.searchbox {
+      margin:0px auto;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+}
+.searchbar {
+    width: 100%;
+    min-width: 800px;
+    margin:2rem auto;
+    justify-content: center;
+    border: none;
+    border-bottom-style: solid;
+    box-sizing: border-box;
+    font: monospace;
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+    display: flex;
+    color: #FFFFFF;
+    background-color: #0C131F;
+    padding: 10px;
+}
+form input::placeholder {
+    color: #FFFFFF;
+    opacity: 1;
+}
+form:focus-within input::placeholder {
+    opacity: 0;
+    border-style: none;
+    outline: none;
+  }
+  form:focus, input:focus{
+    outline: none;
+}
+.list_title
+{
+    font-size: 35px;
+}
+.lists {
+    display: flex;
+    flex-wrap: wrap;
+    vertical-align: top;
+    justify-content: center;
+    font-family: 'Space mono', monospace;
+}
+.ent, .social, .misc, .media, .email {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+#n {
+    color: #7739E3
+}
+#s {
+    color: #22AB76
+}
+#d {
+    color: #E0BE24
+}
+#m {
+    color: #CF342B
+}
+#e {
+    color: #00a3cc
+}
+a:visited, a:link, a:active {
+    color: rgba(236, 240, 193, 0.90);
+    text-decoration: none;
+    font-size: 23px;
+    text-indent: 2px;
+    line-height: 1.5;
+}
+a:hover {
+    color: #2195fa !important
+}
